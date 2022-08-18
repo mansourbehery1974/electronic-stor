@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: grid;
+    grid-auto-rows:minmax(100px,auto);
+    grid-template-areas:
+    "head head head head head head"
+    "nav nav nav nav nav nav"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "sl cont cont cont cont cont"
+    "foot foot foot foot foot foot"
+    ;
+    grid-gap:1px;
+    font-family: sans-serif, Courier, monospace;
+
+}
+
+.box{
+    text-align: center;
+    background-color:#EAEDED;
+}
+.header{
+    grid-area:head;
+}
+.nav{
+    grid-area:nav;
+    background-color:#EAEDED;
+    height:150px;
+}
+.sidebar{
+    grid-area:sl;
+    width:200px;
+}
+.sidebar ul{
+    margin:0px;
+    padding:5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(120, 179, 241);
+    text-decoration: none;
+    list-style-type:none;
+}
+
+.content{
+    grid-area:cont;
+}
+.img{
+    width:100%;
+    height:70%;
+} 
+.pimg{
+    width:45%;
+    height:500px;
+    text-align: center;
+    color:#5499C7;
+    font-size:24px;
+    font-weight: bold;
+    float:right;
+    margin:10px;
+    padding:10px;
+}
+.footer{
+    grid-area:foot;
+    height:200px;
+}
+.ph{
+    width:100%;
+    height:350px;
+}
+.logo{
+    width:150px;
+    height:150px;
+    float:left;
+}
+
+.logo img{
+    height:150px;
+    width:150px;
+}
+
+ ul{
+    
+    float:right; 
+}
+ul li {
+    float:left;
+    margin:50px 30px;
+    padding:10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:#A569BD;
+    text-decoration: none;
+    list-style-type: none;
+    
+
+
+}
+ul li a:hover{
+    color:red;
+}
+.so{
+    width:50px;
+    height:50px;
+    float:right;
+    margin:1px;
+}
+.social{
+    float:left;
+}
+.copy{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    float:right;
+    margin:70px 100px;
+}
+span{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
